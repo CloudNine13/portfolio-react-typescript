@@ -4,6 +4,7 @@ const theme: DefaultTheme = {
   colors: {
     black: '#000000',
     white: '#ffffff',
+    amour: '#f9e8ef',
   },
   fonts: {
     bold: 700,

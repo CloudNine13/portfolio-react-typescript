@@ -5,6 +5,7 @@ declare module 'styled-components' {
     colors: {
       black: string;
       white: string;
+      amour: string;
     };
     fonts: {
       bold: number;
