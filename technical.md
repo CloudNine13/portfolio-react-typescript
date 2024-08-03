@@ -1,6 +1,13 @@
 # ToDo:
 
+- ~~Top navbar~~
+- About me page
+- Examples page
+- Repository page
+- Contact me page
+
 # ReDo:
 
-# UnDo:
+- Remake top navbar design
 
+# UnDo:
