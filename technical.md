@@ -5,6 +5,7 @@
 - Examples page
 - Repository page
 - Contact me page
+- 404 page
 
 # ReDo:
 

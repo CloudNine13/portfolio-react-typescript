@@ -6,16 +6,36 @@ const Menu = () => {
   const links = [
     {
       path: PATHS.ABOUT_ME,
-      title: 'About Me',
+      title: '¿Quién soy?',
+      target: '_self',
+    },
+    {
+      path: PATHS.EXAMPLES,
+      title: 'Ejemplos',
+      target: '_self',
+    },
+    {
+      path: PATHS.REPOSITORIES,
+      title: 'Repositorios',
+      target: '_self',
+    },
+    {
+      path: PATHS.CONTACT_ME,
+      title: 'Contactar',
       target: '_self',
     },
   ];
 
   return (
     <Wrapper>
-      {links.map(link => (
-        <NavLink to={link.path} title={link.title} target={link.target}></NavLink>
-      ))}
+      {links.map(link => {
+        const { path, title, target } = link;
+        return (
+          <NavLink key={path} to={path} title={title} target={target}>
+            {title}
+          </NavLink>
+        );
+      })}
     </Wrapper>
   );
 };
