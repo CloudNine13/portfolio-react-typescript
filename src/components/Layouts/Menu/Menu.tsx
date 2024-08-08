@@ -1,8 +1,9 @@
-import { NavLink } from 'react-router-dom';
 import { PATHS } from 'utils/constants';
-import { Wrapper } from './Menu.style';
+import { LogoContainer, Logo, Link, Wrapper, LinkContainer, Empty, Button } from './Menu.style';
+import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
+  const navigate = useNavigate();
   const links = [
     {
       path: PATHS.ABOUT_ME,
@@ -21,21 +22,32 @@ const Menu = () => {
     },
     {
       path: PATHS.CONTACT_ME,
-      title: 'Contactar',
+      title: 'Saludar',
       target: '_self',
+      isButton: true,
     },
   ];
 
   return (
     <Wrapper>
-      {links.map(link => {
-        const { path, title, target } = link;
-        return (
-          <NavLink key={path} to={path} title={title} target={target}>
-            {title}
-          </NavLink>
-        );
-      })}
+      <LogoContainer>
+        <Logo onClick={() => navigate(PATHS.HOME)} />
+      </LogoContainer>
+      <LinkContainer>
+        {links.map(link => {
+          const { path, title, target, isButton } = link;
+          return isButton ? (
+            <Button key={path} to={path} title={title} target={target}>
+              {title}
+            </Button>
+          ) : (
+            <Link key={path} to={path} title={title} target={target}>
+              {title}
+            </Link>
+          ); 
+        })}
+      </LinkContainer>
+      <Empty />
     </Wrapper>
   );
 };

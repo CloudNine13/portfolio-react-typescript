@@ -5,17 +5,29 @@ declare module 'styled-components' {
     colors: {
       black: string;
       white: string;
-      amour: string;
+      bun: string;
+      tomato: string;
+      patty: string;
+      lettuce: string;
     };
     fonts: {
-      bold: number;
-      medium: number;
-      light: number;
-    };
-    fontSize: {
-      small: string;
-      medium: string;
-      big: string;
+      weight: {
+        extraBold: number;
+        bold: number;
+        semiBold: number;
+        medium: number;
+        light: number;
+        extraThin: number;
+        thin: number;
+      };
+      size: {
+        xs: string;
+        small: string;
+        regular: string;
+        medium: string;
+        large: string;
+        xl: string;
+      };
     };
   }
 }
