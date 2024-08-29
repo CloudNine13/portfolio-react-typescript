@@ -15,9 +15,9 @@ const Wrapper = styled.div`
 const Container = styled.div<{ width?: string; height?: string }>`
   position: relative;
   margin-top: 0;
-  top: ${({ width, height }) => (width && height ? 'initial' : '-128')}
-  width: ${({ width }) => (width ? width : '64px')}
-  height: ${({ height }) => (height ? height : '64px')}
+  top: ${({ width, height }) => (width && height ? 'initial' : '-128px')};
+  width: ${({ width }) => (width ? width : '64px')};
+  height: ${({ height }) => (height ? height : '64px')};
 `;
 
 const animationKeyframes = keyframes`

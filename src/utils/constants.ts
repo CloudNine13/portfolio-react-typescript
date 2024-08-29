@@ -6,6 +6,7 @@ const PATHS: Readonly<Record<string, string>> = {
   CONTACT_ME: '/contact-me',
   NOT_FOUND: '/dead-link',
   EVERYWHERE_ELSE: '*',
+  SELF: '#',
 };
 
 export { PATHS };
