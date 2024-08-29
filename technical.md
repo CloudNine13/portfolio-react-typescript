@@ -2,6 +2,9 @@
 
 - ~~Top navbar~~
 - About me page
+    - Presentation component
+    -
+    -
 - Examples page
 - Repository page
 - Contact me page
@@ -9,6 +12,6 @@
 
 # ReDo:
 
-- Remake top navbar design
+- ~~Remake top navbar design~~
 
 # UnDo:

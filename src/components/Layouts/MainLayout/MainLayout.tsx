@@ -1,15 +1,15 @@
 import { WithSuspense } from './WithSuspense';
 import { Container, Wrapper } from './MainLayout.style';
-import { Menu } from '../Menu';
+import { Header } from '../Header';
 
 type MainLayoutProps = {
   loader: () => Promise<{ default: React.ComponentType<any> }>;
+  menuColor?: string;
 };
 
-const MainLayout = ({ loader }: MainLayoutProps) => {
+const MainLayout = ({ loader, menuColor }: MainLayoutProps) => {
   return (
     <Wrapper>
-      <Menu />
       <Container>
         <WithSuspense loader={loader} />
       </Container>
