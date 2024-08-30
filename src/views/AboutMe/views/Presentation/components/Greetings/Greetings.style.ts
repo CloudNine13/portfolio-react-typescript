@@ -15,7 +15,6 @@ const GreetingsContainer = styled.h2`
   text-align: justify;
   font-size: ${({ theme }) => theme.fonts.size.xxxl};
   color: ${({ theme }) => theme.colors.black};
-  font-family: 'Benett Sans';
   width: 30%;
   user-select: none;
   text-align: center;

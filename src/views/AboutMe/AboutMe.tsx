@@ -1,6 +1,6 @@
 import { Header } from 'components';
 import { SectionContainer } from './AboutMe.style';
-import { Presentation, Skills } from './views';
+import { Presentation, Skills, Projects } from './views';
 
 const AboutMe = () => {
   return (
@@ -8,6 +8,7 @@ const AboutMe = () => {
       <Header />
       <Presentation />
       <Skills />
+      <Projects />
     </SectionContainer>
   );
 };
