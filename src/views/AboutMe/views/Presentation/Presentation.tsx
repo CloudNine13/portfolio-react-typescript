@@ -8,7 +8,7 @@ import { useRef } from 'react';
 
 const Presentation = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
+  const isInView = useInView(sectionRef, { once: true });
 
   return (
     <Wrapper ref={sectionRef}>
