@@ -1,5 +1,5 @@
-import { PATHS } from 'utils/constants';
-import { LogoContainer, Logo, Link, Wrapper, LinkContainer } from './Header.style';
+import { MENU_LINK_TYPE, PATHS, SCROLL_INTO_VIEW_IDS } from 'utils';
+import { LogoContainer, Logo, Link, Wrapper, LinkContainer, StyledButton } from './Header.style';
 import { useNavigate } from 'react-router-dom';
 import { Button } from 'components';
 
@@ -12,27 +12,27 @@ const Header = ({ menuColor }: MenuProps) => {
   const links = [
     {
       id: 1,
-      path: PATHS.ABOUT_ME,
-      title: '¿Quién soy?',
-      target: '_self',
+      type: MENU_LINK_TYPE.SCROLL,
+      path: SCROLL_INTO_VIEW_IDS.SKILLS,
+      title: 'Habilidades',
     },
     {
       id: 2,
-      path: PATHS.EXAMPLES,
-      title: 'Ejemplos',
-      target: '_self',
+      type: MENU_LINK_TYPE.SCROLL,
+      path: SCROLL_INTO_VIEW_IDS.PROJECTS,
+      title: 'Proyectos',
     },
     {
       id: 3,
+      type: MENU_LINK_TYPE.SCROLL,
       path: PATHS.REPOSITORIES,
       title: 'Repositorios',
-      target: '_self',
     },
     {
       id: 4,
+      type: MENU_LINK_TYPE.SCROLL,
       path: PATHS.CONTACT_ME,
       title: 'Saludar',
-      target: '_self',
       isButton: true,
     },
   ];
@@ -44,18 +44,24 @@ const Header = ({ menuColor }: MenuProps) => {
       </LogoContainer>
       <LinkContainer>
         {links.map(link => {
-          const { id, path, title, target, isButton } = link;
+          const { id, path, type, title, isButton } = link;
           return isButton ? (
-            <Button
+            <StyledButton
               key={id}
               title={title}
               onClick={() => {
-                console.log(path);
-                navigate(path);
+                const scrollPath = document.getElementById(path);
+                scrollPath?.scrollIntoView({ behavior: 'smooth' });
               }}
             />
           ) : (
-            <Link key={id} to={path} target={target}>
+            <Link
+              key={id}
+              onClick={() => {
+                const scrollPath = document.getElementById(path);
+                scrollPath?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               {title}
             </Link>
           );

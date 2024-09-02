@@ -20,12 +20,12 @@ const GreetingsContainer = styled.h2`
   text-align: center;
 `;
 
-const HighlightedText = styled.span`
+const High = styled.span`
   color: ${({ theme }) => theme.colors.black};
   display: inline-block;
 `;
 
-const HighlightedTextItalic = styled(HighlightedText)`
+const HighItalic = styled(High)`
   font-style: ${({ theme }) => theme.fonts.style.italic};
 `;
 
@@ -64,18 +64,18 @@ const Spoiler = styled.span<{ $isHidden: boolean }>`
 `;
 
 const ButtonContainer = styled.div`
-  gap: 15px;
+  gap: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 35px;
 `;
 
 export {
   Wrapper,
   GreetingsContainer,
-  HighlightedTextItalic,
-  HighlightedText,
+  HighItalic,
+  High,
   DescriptionContainer,
   LinkStyled,
   Spoiler,

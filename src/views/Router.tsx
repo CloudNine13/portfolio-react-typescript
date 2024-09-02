@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { PATHS } from '../utils/constants';
+import { PATHS } from 'utils';
 import { MainLayout } from 'components';
 
 const AboutMe = () => import('./AboutMe');

@@ -1,13 +1,13 @@
-import { NavLink } from 'react-router-dom';
 import { ReactComponent as TerminalLogo } from '../../../assets/svg/terminal.svg';
 import styled from 'styled-components';
+import { Button } from 'components/Button';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  height: 55px;
+  height: 65px;
   background-color: ${({ theme }) => theme.colors.extraLightGray};
   z-index: 10;
 `;
@@ -15,7 +15,6 @@ const Wrapper = styled.div`
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 10px;
   margin-left: 10px;
 `;
 
@@ -23,16 +22,17 @@ const Logo = styled(TerminalLogo)`
   cursor: pointer;
   width: 48px;
   height: 48px;
+  border-radius: 5px;
 `;
 
 const LinkContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
   margin-right: 10px;
 `;
 
-const Link = styled(NavLink)`
+const Link = styled.div`
   pointer-events: stroke;
   text-decoration: none;
   position: relative;
@@ -42,6 +42,7 @@ const Link = styled(NavLink)`
 
   &:hover {
     color: ${({ theme }) => theme.colors.black};
+    cursor: pointer;
   }
 
   &::before {
@@ -62,4 +63,8 @@ const Link = styled(NavLink)`
   }
 `;
 
-export { Wrapper, LogoContainer, Logo, LinkContainer, Link };
+const StyledButton = styled(Button)`
+  font-size: ${({ theme }) => theme.fonts.size.medium};
+`;
+
+export { Wrapper, LogoContainer, Logo, LinkContainer, Link, StyledButton };
