@@ -15,18 +15,17 @@ const getSkills = (skill: number) => {
       return {
         src: excellentDot,
         width: '13px',
-        alignSelf: 'center',
       };
     case 7:
     case 6:
     case 5:
     case 4:
-      return { src: goodDot, width: '11px', alignSelf: 'center' };
+      return { src: goodDot, width: '11px' };
     case 3:
     case 2:
     case 1:
     default:
-      return { src: normalDot, width: '9px', alignSelf: 'center' };
+      return { src: normalDot, width: '9px' };
   }
 };
 

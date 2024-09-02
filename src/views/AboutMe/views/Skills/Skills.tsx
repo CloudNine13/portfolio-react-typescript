@@ -1,10 +1,11 @@
+import { SCROLL_INTO_VIEW_IDS } from 'utils';
 import { Skill } from './components';
 import { Header, SkillsContainer, Wrapper } from './Skills.style';
 import { SKILLS, SOFT_SKILLS } from './utils';
 
 const Skills = () => {
   return (
-    <Wrapper>
+    <Wrapper id={SCROLL_INTO_VIEW_IDS.SKILLS}>
       <Header>Skills</Header>
       <SkillsContainer>
         {SKILLS.map(skill => (

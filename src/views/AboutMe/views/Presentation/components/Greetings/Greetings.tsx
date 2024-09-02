@@ -3,8 +3,8 @@ import {
   ButtonContainer,
   DescriptionContainer,
   GreetingsContainer,
-  HighlightedText,
-  HighlightedTextItalic,
+  High,
+  HighItalic,
   Spoiler,
   Wrapper,
 } from './Greetings.style';
@@ -30,15 +30,19 @@ const Greetings = ({ isInView }: GreetingsProps) => {
     setIsHidden(prev => ({ ...prev, [key]: false }));
   };
 
+  const handleClick = () => {
+    const projects = document.getElementById('projects');
+    projects?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <Wrapper $isInView={isInView}>
       <GreetingsContainer>
-        <HighlightedText>Igor Dzichkovskii</HighlightedText>
+        <High>Igor Dzichkovskii</High>
       </GreetingsContainer>
       <DescriptionContainer>
-        Soy <HighlightedTextItalic>desarrollador software </HighlightedTextItalic> con{' '}
-        <HighlightedTextItalic>más de 3 años de experiencia</HighlightedTextItalic> en el desarrollo
-        Front-End.{' '}
+        Soy <HighItalic>desarrollador software </HighItalic> con{' '}
+        <HighItalic>más de 3 años de experiencia</HighItalic> en el desarrollo Front-End.{' '}
         <Spoiler onMouseOver={() => reveal('backIsHidden')} $isHidden={isHidden.backIsHidden}>
           Y Back-End.
         </Spoiler>{' '}
@@ -51,7 +55,7 @@ const Greetings = ({ isInView }: GreetingsProps) => {
       </DescriptionContainer>
       <ButtonContainer>
         <Button title="Conóceme" />
-        <Button title="Proyectos" primary={false} />
+        <Button title="Proyectos" primary={false} onClick={handleClick} />
       </ButtonContainer>
     </Wrapper>
   );

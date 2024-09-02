@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg fill="#FFFFFF" version="1.1" baseProfile="basic" id="Layer_1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64"
+	 xml:space="preserve">
+<path d="M50,32c1.104,0,2,0.896,2,2v12c0,3.309-2.691,6-6,6H18c-3.309,0-6-2.691-6-6V18c0-3.309,2.691-6,6-6h12c1.104,0,2,0.896,2,2
+	s-0.896,2-2,2H18c-1.103,0-2,0.897-2,2v28c0,1.103,0.897,2,2,2h28c1.103,0,2-0.897,2-2V34C48,32.896,48.896,32,50,32z"/>
+<path id="overlay_12_" d="M52,10c1.104,0,2,0.896,2,2v12c0,1.104-0.896,2-2,2s-2-0.896-2-2v-7.172L33.414,33.414
+	C33.023,33.805,32.512,34,32,34s-1.023-0.195-1.414-0.586c-0.781-0.781-0.781-2.047,0-2.828L47.172,14H40c-1.104,0-2-0.896-2-2
+	s0.896-2,2-2H52z"/>
+</svg>

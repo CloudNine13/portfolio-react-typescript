@@ -1,0 +1,1 @@
+export { ProjectsFooter } from './ProjectsFooter';

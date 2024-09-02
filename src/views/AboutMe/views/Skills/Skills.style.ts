@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 
 const Header = styled.h1`
   margin: 50px 0;
-  font-size: ${({ theme }) => theme.fonts.size.xxl};
+  font-size: ${({ theme }) => theme.fonts.size.xxxl};
   color: ${({ theme }) => theme.colors.black};
 `;
 

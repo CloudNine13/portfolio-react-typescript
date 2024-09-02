@@ -2,13 +2,14 @@
 
 - ~~Top navbar~~
 - About me page
-    - Presentation component
-    -
-    -
-- Examples page
+  - ~~Presentation view~~
+  - ~~Skills view~~
+  - Examples view
+  - ~~Projects view~~
+  - Contact me view
 - Repository page
-- Contact me page
 - 404 page
+- Work in Progress page
 
 # ReDo:
 

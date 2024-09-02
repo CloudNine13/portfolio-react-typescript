@@ -8,9 +8,9 @@ import reportWebVitals from './reportWebVitals';
 const root = document.getElementById('root') as HTMLElement;
 const reactRoot = ReactDOM.createRoot(root);
 reactRoot.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

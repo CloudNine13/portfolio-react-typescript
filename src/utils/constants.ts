@@ -9,4 +9,14 @@ const PATHS: Readonly<Record<string, string>> = {
   SELF: '#',
 };
 
-export { PATHS };
+enum MENU_LINK_TYPE {
+  SCROLL = 'scroll',
+  LINK = 'link',
+}
+
+const SCROLL_INTO_VIEW_IDS = {
+  PROJECTS: 'projects',
+  SKILLS: 'skills',
+};
+
+export { PATHS, MENU_LINK_TYPE, SCROLL_INTO_VIEW_IDS };
