@@ -1,44 +1,12 @@
-import { MENU_LINK_TYPE, PATHS, SCROLL_INTO_VIEW_IDS } from 'utils';
+import { PATHS } from 'utils';
 import { LogoContainer, Logo, Link, Wrapper, LinkContainer, StyledButton } from './Header.style';
 import { useNavigate } from 'react-router-dom';
-import { Button } from 'components';
+import { links } from './utils';
 
-type MenuProps = {
-  menuColor?: string;
-};
-
-const Header = ({ menuColor }: MenuProps) => {
+const Header = () => {
   const navigate = useNavigate();
-  const links = [
-    {
-      id: 1,
-      type: MENU_LINK_TYPE.SCROLL,
-      path: SCROLL_INTO_VIEW_IDS.SKILLS,
-      title: 'Habilidades',
-    },
-    {
-      id: 2,
-      type: MENU_LINK_TYPE.SCROLL,
-      path: SCROLL_INTO_VIEW_IDS.PROJECTS,
-      title: 'Proyectos',
-    },
-    {
-      id: 3,
-      type: MENU_LINK_TYPE.SCROLL,
-      path: PATHS.REPOSITORIES,
-      title: 'Repositorios',
-    },
-    {
-      id: 4,
-      type: MENU_LINK_TYPE.SCROLL,
-      path: PATHS.CONTACT_ME,
-      title: 'Saludar',
-      isButton: true,
-    },
-  ];
-
   return (
-    <Wrapper color={menuColor ? menuColor : 'bun'}>
+    <Wrapper>
       <LogoContainer>
         <Logo onClick={() => navigate(PATHS.HOME)} />
       </LogoContainer>
