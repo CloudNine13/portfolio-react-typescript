@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   height: 65px;
   background-color: ${({ theme }) => theme.colors.extraLightGray};
   z-index: 10;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.lightGray};
 `;
 
 const LogoContainer = styled.div`
