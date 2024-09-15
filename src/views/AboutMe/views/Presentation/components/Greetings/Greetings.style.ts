@@ -31,7 +31,6 @@ const HighItalic = styled(High)`
 
 const DescriptionContainer = styled.div`
   width: 90%;
-  text-align: justify;
   line-height: 30px;
   margin-top: 130px;
   text-align: center;
@@ -68,7 +67,7 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 50px;
 `;
 
 export {

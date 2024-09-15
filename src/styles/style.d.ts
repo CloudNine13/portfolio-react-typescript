@@ -10,7 +10,7 @@ declare module 'styled-components' {
       lightGray: string;
       extraLightGray: string;
       brown: string;
-      tomato: string;
+      lightRed: string;
     };
     animations: {
       transitions: {

@@ -30,7 +30,7 @@ const links: Array<Links> = [
   {
     id: 4,
     type: MENU_LINK_TYPE.SCROLL,
-    path: PATHS.CONTACT_ME,
+    path: SCROLL_INTO_VIEW_IDS.CONTACT,
     title: 'Saludar',
     isButton: true,
   },

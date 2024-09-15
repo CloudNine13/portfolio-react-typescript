@@ -7,10 +7,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: ${({ theme }) => theme.fonts.size.xl};
   background-color: ${({ theme }) => theme.colors.white};
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: 1px solid #a09ca6;
   transition: transform 0.3s;
 
   &:hover {

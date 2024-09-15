@@ -6,11 +6,13 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  padding-bottom: 40px;
+  padding-bottom: 110px;
+  padding-top: 20px;
 `;
 
 const Header = styled.h1`
-  margin: 50px 0;
+  margin-bottom: 60px;
+  margin-top: 75px;
   font-size: ${({ theme }) => theme.fonts.size.xxxl};
   color: ${({ theme }) => theme.colors.black};
 `;

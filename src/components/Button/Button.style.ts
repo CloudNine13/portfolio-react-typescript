@@ -4,7 +4,7 @@ type ButtonProps = {
   $primary?: boolean;
 };
 
-const StyledButton = styled.div<ButtonProps>`
+const StyledButton = styled.button<ButtonProps>`
   background-color: ${({ theme, $primary }) =>
     $primary ? theme.colors.black : theme.colors.white};
   border-radius: 7.5px;
@@ -16,16 +16,22 @@ const StyledButton = styled.div<ButtonProps>`
   padding: 6px 10px;
   user-select: none;
   font-size: ${({ $primary }) => ($primary ? '22' : '20')}px;
+  font-family: 'TT Firs Neue';
 
-  &:hover {
+  &:hover:enabled {
     background-color: ${({ theme, $primary }) =>
       $primary ? theme.colors.darkGray : theme.colors.lightGray} !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 
-  &:active {
+  &:active:enabled {
     transform: translateY(2px);
     transition: transform 0.05s;
+  }
+
+  &:disabled {
+    background-color: ${({ theme }) => theme.colors.darkGray};
+    cursor: not-allowed;
   }
 `;
 
