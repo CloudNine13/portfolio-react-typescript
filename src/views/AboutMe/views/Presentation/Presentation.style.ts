@@ -5,8 +5,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  height: 90vh;
   margin-top: 60px;
-  margin-bottom: 140px;
 `;
 
 const ImageContainer = styled.div`
