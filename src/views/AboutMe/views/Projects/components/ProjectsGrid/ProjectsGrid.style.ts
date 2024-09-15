@@ -5,7 +5,7 @@ const ProjectsContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 30px;
   grid-column-gap: 75px;
-  margin: 20px 0;
+  margin: 50px 0;
 `;  
 
 export { ProjectsContainer };

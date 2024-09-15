@@ -10,6 +10,8 @@
 - Repository page
 - 404 page
 - Work in Progress page
+- Corner radius fix
+- Submit button state analisis 
 
 # ReDo:
 

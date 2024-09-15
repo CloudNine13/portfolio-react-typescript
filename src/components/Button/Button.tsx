@@ -1,16 +1,23 @@
+import { ButtonHTMLAttributes } from 'react';
 import { ExternalImage, StyledButton } from './Button.style';
 import externalImage from 'assets/svg/external_link.svg';
 
-type ButtonProps = {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   title: string;
+  type?: 'button' | 'submit' | 'reset';
   primary?: boolean;
   external?: boolean;
-  onClick?: () => void;
 };
 
-const Button = ({ title, primary = true, external = false, onClick, ...props }: ButtonProps) => {
+const Button = ({
+  title,
+  type,
+  primary = true,
+  external = false,
+  ...props
+}: ButtonProps) => {
   return (
-    <StyledButton $primary={primary} onClick={onClick} {...props}>
+    <StyledButton $primary={primary} type={type} {...props}>
       {title}
       {external && <ExternalImage src={externalImage} />}
     </StyledButton>

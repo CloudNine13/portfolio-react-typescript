@@ -5,7 +5,6 @@ const Img = styled.img<{ $isInView: boolean }>`
   max-width: 350px;
   width: auto;
   height: auto;
-  background-color: ${({ theme }) => theme.colors.tomato};
   opacity: ${({ $isInView }) => ($isInView ? 1 : 0)};
   transition: ${({ theme }) => theme.animations.transitions.cubicBezierFadeIn};
 

@@ -12,7 +12,7 @@ const Header = () => {
       </LogoContainer>
       <LinkContainer>
         {links.map(link => {
-          const { id, path, type, title, isButton } = link;
+          const { id, path, title, isButton } = link;
           return isButton ? (
             <StyledButton
               key={id}

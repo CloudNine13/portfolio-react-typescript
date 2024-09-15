@@ -9,7 +9,7 @@ const theme: DefaultTheme = {
     lightGray: '#e4e4e7',
     extraLightGray: '#fafafa',
     brown: '#88472E',
-    tomato: '#D22501',
+    lightRed: '#FF817E',
   },
   animations: {
     transitions: {
